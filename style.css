@@ -1,0 +1,113 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("https://images.unsplash.com/photo-1526304640581-d334cdbbf45e");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 360px;
+  background: rgba(255,255,255,0.92);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+h2, h3 { font-family: 'Poppins', sans-serif; text-align: center; }
+
+label { margin-top: 10px; display: block; }
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #4CAF50, #2e8b57);
+}
+
+.archive-btn { background: linear-gradient(135deg, #2196F3, #1565C0); }
+.view-btn { background: linear-gradient(135deg, #9c27b0, #6a1b9a); }
+
+.result {
+  margin-top: 15px;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.saved-info {
+  margin-top: 15px;
+  background: #eef5ff;
+  padding: 14px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.archive-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.archive-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pin {
+  font-size: 16px;
+}
+
+.close-btn {
+  background: #e53935;
+  color: white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover { background: #c62828; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+
+.row.total {
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 8px 0;
+}

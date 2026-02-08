@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salary Budget Calculator</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Salary Budget Calculator 🧮</h2>
+
+    <label>Salary</label>
+    <input type="number" id="salary" placeholder="Enter your salary">
+
+    <h3>Expenses</h3>
+
+    <input type="number" class="expense" placeholder="Field Work">
+    <input type="number" class="expense" placeholder="Boarding House">
+    <input type="number" class="expense" placeholder="Water Bill">
+    <input type="number" class="expense" placeholder="Electric Bill">
+    <input type="number" class="expense" placeholder="Savings">
+    <input type="number" class="expense" placeholder="Ipon Challenge">
+    <input type="number" class="expense" placeholder="Wifi">
+    <input type="number" class="expense" placeholder="Home Credit">
+    <input type="number" class="expense" placeholder="Groceries">
+    <input type="number" class="expense" placeholder="Additional Expense">
+
+    <label>Next Salary Date</label>
+    <input type="date" id="nextSalary">
+
+    <button onclick="computeBudget()">Compute</button>
+    <button class="archive-btn" onclick="saveArchive()">📦 Archive Today</button>
+    <button class="view-btn" onclick="openArchive()">📌 View Archive</button>
+
+    <div class="result">
+      <p><strong>Total Expenses:</strong> ₱<span id="totalExpenses">0</span></p>
+      <p><strong>Remaining Salary:</strong> ₱<span id="remaining">0</span></p>
+      <p><strong>Daily Budget:</strong> ₱<span id="dailyBudget">0</span></p>
+    </div>
+
+    <div class="saved-info" id="savedInfo" style="display:none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
